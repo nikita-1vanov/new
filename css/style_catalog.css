@@ -5,12 +5,11 @@ html {
 }
 
 body {
-    position: relative;
     display:flex;
     flex-direction: column;
 
     max-width: 1920px;
-    min-width: 600px;
+    min-width: 680px;
     height: 100%;
 
     font-family: "Arial";
@@ -19,7 +18,6 @@ body {
     line-height: 1.5;
 
     margin: auto;
-    z-index: 1;
 }
 
 .header {
@@ -28,8 +26,15 @@ body {
     padding-bottom: 50px;
 }
 
+nav {
+    position: relative;
+    z-index: 1;
+}
+
 main {
+    position: relative;
     flex-grow:1;
+    z-index: 1;
 }
 
 footer {
@@ -147,7 +152,6 @@ h1 {
 .block_menu {
     border: solid #dcdcdc 1px;
     width: 180px;
-    z-index: 2;
 }
 
 
@@ -206,8 +210,6 @@ button:hover {
     width: 100%;
 }
 
-
-
 /*---------Футер----------*/
 
 footer img {
@@ -248,16 +250,6 @@ footer p {
 
     header {
         text-align: center;
-    }
-
-    h1 {
-        line-height: 40px;
-    }
-
-    .container {
-        padding-left: 10%;
-        padding-right: 10%;
-        width: 80%;
     }
 
     .offer {
@@ -334,32 +326,14 @@ footer p {
         width: 80px;
     }
 
+    footer img:hover {
+        width: 90px;
+    }
+
     footer p {
         font-size: 27px;
     }
 
-   /* .menu {
-        margin: 20px 0 20px 0;
-    }
-
-    .menu p {
-
-        margin: 20px 5px 20px 5px;
-    }
-
-    .menu a {
-        text-decoration: none;
-        padding: 15px 25px 15px 25px;
-        color: black;
-        border: solid  grey 2px;
-        border-radius: 60px;
-        margin: 0 5px 0 5px;
-        font-size: 30px;
-    }
-
-    .menu a:hover {
-        background-color: blanchedalmond;
-    } */
 
     .offer img {
         width: 75%;
@@ -376,10 +350,11 @@ footer p {
     select {
         padding: 10px 20px 10px 20px;
         color: black;
-        border: solid  dimgrey 3px;
+        border: solid dimgrey 3px;
         border-radius: 10px;
         font-size: 40px;
         background-color: white;
+    }
 
     select:hover {
         background-color: white;
@@ -387,6 +362,41 @@ footer p {
 
     option:hover {
         background-color: white;
-        }
-}
     }
+
+    .vipad_menu {
+        display: block;
+    }
+
+    .block_menu {
+        border: solid #dcdcdc 3px;
+        width: 450px;
+        z-index: 2;
+    }
+
+    .block_menu a {
+        font-size: 38px;
+        width: 450px;
+
+    }
+
+    .block_menu p {
+        font-size: 38px;
+        width: 450px;
+        margin: 15px 0 15px 0;
+    }
+
+    .vipad_menu {
+        border-bottom: solid #dcdcdc 1px;
+        padding: 30px 0 30px 0;
+    }
+
+    .vipad_menu button {
+        padding: 20px 20px 20px 20px;
+        border: solid #dcdcdc 3px;
+        border-radius: 10px;
+        font-size: 38px;
+        width: 450px
+    }
+
+}
