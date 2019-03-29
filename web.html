@@ -21,11 +21,68 @@
 <nav class="container">
 
     <div class="menu flex_centr">
-        <p><a href="#" id="box" style="background-color: white">Маркетинг</a></p>
-        <p><a href="#" id="box2" style="background-color: white">WEB</a></p>
-        <p><a href="#" id="box3" style="background-color: white">Графика</a></p>
-        <p><a href="#" id="box4" style="background-color: white">Аналитика</a></p>
+        <p><a href="#" id="box" style="background-color: white">Для маркетологов</a></p>
+        <p><a href="#" id="box2" style="background-color: white">Для программистов</a></p>
+        <p><a href="#" id="box3" style="background-color: white">Для дизайнеров</a></p>
+        <p><a href="#" id="box4" style="background-color: white">Для аналитиков</a></p>
     </div>
+
+
+    <div class="vipad_menu">
+        <button href="#" id="but_box"  style="display: block">Выбрать раздел   ▼</button>
+        <button href="#" id="but_box2" style="display: none">Выбрать раздел   ▲</button>
+    </div>
+
+    <div id="but_block" class="block_menu" style="display: none">
+        <p><a href="#">Для маркетологов</a></p>
+        <p><a href="#">Для программистов</a></p>
+        <p><a href="#">Для дизайнеров</a></p>
+        <p><a href="#">Для аналитиков</a></p>
+    </div>
+
+    <script type="text/javascript">
+
+        document.querySelector('#but_box').addEventListener('click', function () {
+            display = document.getElementById('but_box').style.display;
+            if(display == "block") {
+                document.getElementById('but_box').style.display="none";
+                document.getElementById('but_box2').style.display="block";
+            } else {
+                document.getElementById('but_box2').style.display="none";
+                document.getElementById('but_box').style.display="block";
+            }
+        })
+
+        document.querySelector('#but_box2').addEventListener('click', function () {
+            display = document.getElementById('but_box2').style.display;
+            if(display == "block") {
+                document.getElementById('but_box2').style.display="none";
+                document.getElementById('but_box').style.display="block";
+            } else {
+                document.getElementById('but_box').style.display="none";
+                document.getElementById('but_box2').style.display="block";
+            }
+        })
+
+        document.querySelector('#but_box').addEventListener('click', function () {
+            display = document.getElementById('but_block').style.display;
+            if(display == "none") {
+                document.getElementById('but_block').style.display="block";
+            } else {
+                document.getElementById('but_block').style.display="none";
+            }
+        })
+
+        document.querySelector('#but_box2').addEventListener('click', function () {
+            display = document.getElementById('but_block').style.display;
+            if(display == "block") {
+                document.getElementById('but_block').style.display="none";
+            } else {
+                document.getElementById('but_block').style.display="block";
+            }
+        })
+
+    </script>
 
     <div id="market_menu" style="display: none">
         <div class="menu flex_centr">
@@ -62,9 +119,9 @@
 
     <div id="analitics_menu" style="display: none">
         <div class="menu flex_centr">
-            <p><a href="market">КАТЕГОРИЯ 4.1</a></p>
-            <p><a href="web">КАТЕГОРИЯ 4.2</a></p>
-            <p><a href="/grapfik">КАТЕГОРИЯ 4.3</a></p>
+            <p><a href="market">Яндекс.Метрика</a></p>
+            <p><a href="web">Google Аналитикс</a></p>
+            <p><a href="/grapfik">Google Tag Manager</a></p>
             <p><a href="/grapfik">КАТЕГОРИЯ 4.4</a></p>
             <p><a href="/grapfik">КАТЕГОРИЯ 4.5</a></p>
             <p><a href="/web">Все разделы</a></p>
@@ -159,22 +216,6 @@
         }
     })
 
-    document.querySelector('#box').addEventListener('click', function () {
-
-        display = document.getElementById('box').style.display;
-        if(display == "none") {
-            document.getElementById('box').style.backgroundColor="white";
-            document.getElementById('box2').style.backgroundColor="white";
-            document.getElementById('box3').style.backgroundColor="white";
-            document.getElementById('box4').style.backgroundColor="white";
-        } else {
-            document.getElementById('box').style.backgroundColor="blanchedalmond";
-            document.getElementById('box2').style.backgroundColor="white";
-            document.getElementById('box3').style.backgroundColor="white";
-            document.getElementById('box4').style.backgroundColor="white";
-        }
-    })
-
     document.querySelector('#box2').addEventListener('click', function () {
 
         display = document.getElementById('box2').style.display;
@@ -222,71 +263,75 @@
             document.getElementById('box4').style.backgroundColor="blanchedalmond";
         }
     })
+
 </script>
 
-    <header class="container">
-        <div class="flex_between shapka">
-            <div>
-                <p class="data data_up grey">18.03.2019</p>
-            </div>
-            <div class="flex">
-            <p class="data data_up grey">Время чтения 7 минут</p>
 
-            </div>
+
+
+
+
+
+
+
+    <header>
+        <div class="flex_between container_text">
+            <p class="data data_up grey i">18.03.2019</p>
+            <p class="data data_up grey i">Время чтения 7 минут</p>
         </div>
-        <h1>Красивое название статьи с SEO оптимизацией<br>и другими плюшками</h1>
+        <h1 class="text_centr">Красивое название статьи с SEO оптимизацией<br>и другими плюшками</h1>
     </header>
 
 <main>
-    <div>
+    <div class="container_text">
             <div>
-                <p class="osn_text">Текст который понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить
+                <p class="text_page">Текст который понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить
                     трафик и приность немножеко удовольствия от его прочтения. Мне даже не верится что я это делаю. Текст который
                     понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить трафик и приность
                     немножеко удовольствия от его прочтения. Мне даже не верится что я это делаю. Текст который понравится всем
                     и вся, который уникальный и не повторяется где либо, который будет генерить трафик и приность немножеко
                     удовольствия от его прочтения. Мне даже не верится что я это делаю. </p>
 
-                <p class="zag">Красивое название раздела которое понравится многим</p>
+                <p class="zag_page b">Красивое название раздела которое понравится многим</p>
 
-                <p class="osn_text">Текст который понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить
+                <p class="text_page">Текст который понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить
                     трафик и приность немножеко удовольствия от его прочтения. Мне даже не верится что я это делаю. Текст который
                     понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить трафик и приность
                     немножеко удовольствия от его прочтения. Мне даже не верится что я это делаю. Текст который понравится всем
                     и вся, который уникальный и не повторяется где либо, который будет генерить трафик и приность немножеко
                     удовольствия от его прочтения. Мне даже не верится что я это делаю. </p>
 
-                <p class="zag">Красивое название раздела которое понравится многим</p>
+                <p class="zag_page b">Красивое название раздела которое понравится многим</p>
 
-                <p class="osn_text">      Текст который понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить
+                <p class="text_page">      Текст который понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить
                     трафик и приность немножеко удовольствия от его прочтения. Мне даже не верится что я это делаю. Текст который
                     понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить трафик и приность
                     немножеко удовольствия от его прочтения. Мне даже не верится что я это делаю. Текст который понравится всем
                     и вся, который уникальный и не повторяется где либо, который будет генерить трафик и приность немножеко
                     удовольствия от его прочтения. Мне даже не верится что я это делаю. </p>
 
-                <p class="zag">Красивое название раздела которое понравится многим</p>
+                <p class="zag_page b">Красивое название раздела которое понравится многим</p>
 
-                <p class="osn_text">      Текст который понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить
+                <p class="text_page">      Текст который понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить
                     трафик и приность немножеко удовольствия от его прочтения. Мне даже не верится что я это делаю. Текст который
                     понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить трафик и приность
                     немножеко удовольствия от его прочтения. Мне даже не верится что я это делаю. Текст который понравится всем
                     и вся, который уникальный и не повторяется где либо, который будет генерить трафик и приность немножеко
                     удовольствия от его прочтения. Мне даже не верится что я это делаю. </p>
 
-                <p class="zag">Красивое название раздела которое понравится многим</p>
+                <p class="zag_page b">Красивое название раздела которое понравится многим</p>
 
-                <p class="osn_text">      Текст который понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить
+                <p class="text_page">      Текст который понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить
                     трафик и приность немножеко удовольствия от его прочтения. Мне даже не верится что я это делаю. Текст который
                     понравится всем и вся, который уникальный и не повторяется где либо, который будет генерить трафик и приность
                     немножеко удовольствия от его прочтения. Мне даже не верится что я это делаю. Текст который понравится всем
                     и вся, который уникальный и не повторяется где либо, который будет генерить трафик и приность немножеко
                     удовольствия от его прочтения. Мне даже не верится что я это делаю. </p>
                 <p class="data data_down grey">18.03.2019</p>
-            </div>
+    </div>
 
             <div class="offers">
-                <p class="zag grey">Вам так же может быть интересно...</p>
+                <p class="zag_page b">Вам так же может быть интересно...</p>
                 <div class="flex">
                     <div class="offer">
                         <img src="image/off.jpeg" alt="Товар 1">
