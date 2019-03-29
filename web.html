@@ -6,6 +6,7 @@
     <link rel = "stylesheet" type = "text/css" href = "css/reset.css">
     <link rel="stylesheet"   type = "text/css" href="css/style_catalog.css">
     <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+    
 
     <title>Web</title>
     <meta name="keywords" content="купить подарок, купить сувениры, интернет магазин подарков, сувениры оптом, интернет
@@ -39,50 +40,6 @@
         <p><a href="#">Для дизайнеров</a></p>
         <p><a href="#">Для аналитиков</a></p>
     </div>
-
-    <script type="text/javascript">
-
-        document.querySelector('#but_box').addEventListener('click', function () {
-            display = document.getElementById('but_box').style.display;
-            if(display == "block") {
-                document.getElementById('but_box').style.display="none";
-                document.getElementById('but_box2').style.display="block";
-            } else {
-                document.getElementById('but_box2').style.display="none";
-                document.getElementById('but_box').style.display="block";
-            }
-        })
-
-        document.querySelector('#but_box2').addEventListener('click', function () {
-            display = document.getElementById('but_box2').style.display;
-            if(display == "block") {
-                document.getElementById('but_box2').style.display="none";
-                document.getElementById('but_box').style.display="block";
-            } else {
-                document.getElementById('but_box').style.display="none";
-                document.getElementById('but_box2').style.display="block";
-            }
-        })
-
-        document.querySelector('#but_box').addEventListener('click', function () {
-            display = document.getElementById('but_block').style.display;
-            if(display == "none") {
-                document.getElementById('but_block').style.display="block";
-            } else {
-                document.getElementById('but_block').style.display="none";
-            }
-        })
-
-        document.querySelector('#but_box2').addEventListener('click', function () {
-            display = document.getElementById('but_block').style.display;
-            if(display == "block") {
-                document.getElementById('but_block').style.display="none";
-            } else {
-                document.getElementById('but_block').style.display="block";
-            }
-        })
-
-    </script>
 
     <div id="market_menu" style="display: none">
         <div class="menu flex_centr">
@@ -130,156 +87,12 @@
 
 </nav>
 
-<script type="text/javascript">
-
-    <!--Появление подменю-->
-
-    document.querySelector('#box').addEventListener('click', function () {
-
-        display = document.getElementById('market_menu').style.display;
-        if(display == "none") {
-            document.getElementById('market_menu').style.display="block";
-            document.getElementById('web_menu').style.display="none";
-            document.getElementById('grapfik_menu').style.display="none";
-            document.getElementById('analitics_menu').style.display="none";
-        } else {
-            document.getElementById('market_menu').style.display="none";
-            document.getElementById('web_menu').style.display="none";
-            document.getElementById('grapfik_menu').style.display="none";
-            document.getElementById('analitics_menu').style.display="none";
-        }
-    })
-
-    document.querySelector('#box2').addEventListener('click', function () {
-
-        display = document.getElementById('web_menu').style.display;
-        if(display == "none") {
-            document.getElementById('market_menu').style.display="none";
-            document.getElementById('web_menu').style.display="block";
-            document.getElementById('grapfik_menu').style.display="none";
-            document.getElementById('analitics_menu').style.display="none";
-        } else {
-            document.getElementById('market_menu').style.display="none";
-            document.getElementById('web_menu').style.display="none";
-            document.getElementById('grapfik_menu').style.display="none";
-            document.getElementById('analitics_menu').style.display="none";
-        }
-    })
-
-    document.querySelector('#box3').addEventListener('click', function () {
-
-        display = document.getElementById('grapfik_menu').style.display;
-        if(display == "none") {
-            document.getElementById('market_menu').style.display="none";
-            document.getElementById('web_menu').style.display="none";
-            document.getElementById('grapfik_menu').style.display="block";
-            document.getElementById('analitics_menu').style.display="none";
-        } else {
-            document.getElementById('market_menu').style.display="none";
-            document.getElementById('web_menu').style.display="none";
-            document.getElementById('grapfik_menu').style.display="none";
-            document.getElementById('analitics_menu').style.display="none";
-        }
-    })
-
-    document.querySelector('#box4').addEventListener('click', function () {
-
-        display = document.getElementById('analitics_menu').style.display;
-        if(display == "none") {
-            document.getElementById('market_menu').style.display="none";
-            document.getElementById('web_menu').style.display="none";
-            document.getElementById('grapfik_menu').style.display="none";
-            document.getElementById('analitics_menu').style.display="block";
-        } else {
-            document.getElementById('market_menu').style.display="none";
-            document.getElementById('web_menu').style.display="none";
-            document.getElementById('grapfik_menu').style.display="none";
-            document.getElementById('analitics_menu').style.display="none";
-        }
-    })
-
-    <!--Цвет кнопки при нажатии-->
-
-    document.querySelector('#box').addEventListener('click', function () {
-
-        display = document.getElementById('box').style.display;
-        if(display == "none") {
-            document.getElementById('box').style.backgroundColor="white";
-            document.getElementById('box2').style.backgroundColor="white";
-            document.getElementById('box3').style.backgroundColor="white";
-            document.getElementById('box4').style.backgroundColor="white";
-        } else {
-            document.getElementById('box').style.backgroundColor="blanchedalmond";
-            document.getElementById('box2').style.backgroundColor="white";
-            document.getElementById('box3').style.backgroundColor="white";
-            document.getElementById('box4').style.backgroundColor="white";
-        }
-    })
-
-    document.querySelector('#box2').addEventListener('click', function () {
-
-        display = document.getElementById('box2').style.display;
-        if(display == "none") {
-            document.getElementById('box').style.backgroundColor="white";
-            document.getElementById('box2').style.backgroundColor="white";
-            document.getElementById('box3').style.backgroundColor="white";
-            document.getElementById('box4').style.backgroundColor="white";
-        } else {
-            document.getElementById('box').style.backgroundColor="white";
-            document.getElementById('box2').style.backgroundColor="blanchedalmond";
-            document.getElementById('box3').style.backgroundColor="white";
-            document.getElementById('box4').style.backgroundColor="white";
-        }
-    })
-
-    document.querySelector('#box3').addEventListener('click', function () {
-
-        display = document.getElementById('box3').style.display;
-        if(display == "none") {
-            document.getElementById('box').style.backgroundColor="white";
-            document.getElementById('box2').style.backgroundColor="white";
-            document.getElementById('box3').style.backgroundColor="white";
-            document.getElementById('box4').style.backgroundColor="white";
-        } else {
-            document.getElementById('box').style.backgroundColor="white";
-            document.getElementById('box2').style.backgroundColor="white";
-            document.getElementById('box3').style.backgroundColor="blanchedalmond";
-            document.getElementById('box4').style.backgroundColor="white";
-        }
-    })
-
-    document.querySelector('#box4').addEventListener('click', function () {
-
-        display = document.getElementById('box4').style.display;
-        if(display == "none") {
-            document.getElementById('box').style.backgroundColor="white";
-            document.getElementById('box2').style.backgroundColor="white";
-            document.getElementById('box3').style.backgroundColor="white";
-            document.getElementById('box4').style.backgroundColor="white";
-        } else {
-            document.getElementById('box').style.backgroundColor="white";
-            document.getElementById('box2').style.backgroundColor="white";
-            document.getElementById('box3').style.backgroundColor="white";
-            document.getElementById('box4').style.backgroundColor="blanchedalmond";
-        }
-    })
-
-</script>
-
-
-
-
-
-
-
-
-
     <header>
         <div class="flex_between container_text">
-            <p class="data data_up grey i">18.03.2019</p>
-            <p class="data data_up grey i">Время чтения 7 минут</p>
+            <p class="day_page_up grey i">18.03.2019</p>
+            <p class="day_page_up grey i">Время чтения 7 минут</p>
         </div>
-        <h1 class="text_centr">Красивое название статьи с SEO оптимизацией<br>и другими плюшками</h1>
+        <h1 class="text_centr container_text">Красивое название статьи с SEO оптимизацией и другими плюшками</h1>
     </header>
 
 <main>
@@ -327,23 +140,23 @@
                     немножеко удовольствия от его прочтения. Мне даже не верится что я это делаю. Текст который понравится всем
                     и вся, который уникальный и не повторяется где либо, который будет генерить трафик и приность немножеко
                     удовольствия от его прочтения. Мне даже не верится что я это делаю. </p>
-                <p class="data data_down grey">18.03.2019</p>
+                <p class="day_page_down grey i text_right">18.03.2019</p>
     </div>
 
-            <div class="offers">
+            <div class="recomends">
                 <p class="zag_page b">Вам так же может быть интересно...</p>
-                <div class="flex">
-                    <div class="offer">
+                <div class="flex_recomends">
+                    <div class="recomend">
                         <img src="image/off.jpeg" alt="Товар 1">
                         <p class="desc">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
                     </div>
 
-                    <div class="offer">
+                    <div class="recomend">
                         <img src="image/off.jpeg" alt="Товар 1">
                         <p class="desc">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
                     </div>
 
-                    <div class="offer">
+                    <div class="recomend">
                         <img src="image/off.jpeg" alt="Товар 1">
                         <p class="desc">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
                     </div>
@@ -366,5 +179,7 @@
         <p>ИНН 6268293456</p>
     </div>
 </footer>
+
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

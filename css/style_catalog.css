@@ -63,7 +63,7 @@ h1 {
 
 /*---------FLEX----------*/
 
-.flex {
+.flex, .flex_recomends {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -146,8 +146,16 @@ h1 {
     font-size: 18px;
 }
 
+.day_page_up, .day_page_down {
+    font-size: 15px;
+    margin-top: 20px;
+}
 
+.day_page_down {
+    display: none;
+}
 
+/*---------Атрибуты текстов----------*/
 
 
 
@@ -161,6 +169,10 @@ h1 {
 
 .text_centr {
     text-align: center;
+}
+
+.text_right {
+    text-align: right;
 }
 
 /*---------Меню----------*/
@@ -191,8 +203,6 @@ h1 {
     border: solid #dcdcdc 1px;
     width: 180px;
 }
-
-
 
 .block_menu a {
     text-decoration: none;
@@ -248,6 +258,27 @@ button:hover {
     width: 100%;
 }
 
+/*---------Рекомендации----------*/
+
+.recomends {
+    padding-bottom: 30px;
+}
+
+.recomend {
+    width: 23%;
+    margin: 50px 20px 0 20px;
+    min-width: 150px;
+    cursor: pointer;
+}
+
+.recomend:hover .zag {
+    color: red;
+}
+
+.recomend img {
+    width: 100%;
+}
+
 /*---------Футер----------*/
 
 footer img {
@@ -270,6 +301,40 @@ footer p {
 
 .info {
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .container_text {
+        padding-left: 12%;
+        padding-right: 13%;
+        width: 75%;
+        height: auto;
+    }
+
+    .flex_recomends {
+        display: block;
+    }
+
+   .recomend {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 30px 0 0 0;
+   }    
+
+   .recomend img {
+    max-width: 140px;
+    max-height: 140px;
+    margin-right: 35px;
+   }
+
+   p.desc {
+    max-width: 350px;
+    text-align: left;
+   }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -317,7 +382,7 @@ footer p {
         display: none;
     }
 
-    .zag {
+    .zag, .zag_offer {
         font-size: 50px;
         margin-bottom: 0;
         margin-top: 10px;
@@ -437,4 +502,11 @@ footer p {
         width: 450px
     }
 
+    .day_page_down {
+        display: block;
+    }
+
+    .day_page_up {
+        display: none;
+    }
 }
